@@ -30,15 +30,15 @@
     color: orange;
 }
 
+.header {
+    max-width: 1200px;
+    margin: auto;
+}
+
 .logo img {
     width: 200px;
     height: auto;
     float: left;
-}
-
-.header {
-    max-width: 1200px;
-    margin: auto;
 }
 
 body {
