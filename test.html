@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>...</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+
+p {
+  font-size: 18pt;
+  color: white;
+}
+
+header > h1 {
+  font-size: 40px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 0;
+  color: white;
+}
+
+nav > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: yellow;
+  border-radius: 10px;
+}
+
+nav > ul > a {
+  color: black;
+  font-family: sans-serif;
+  padding: 10px;
+  text-decoration: none;
+}
+
+nav > ul > a:hover {
+  background-color: orange;
+  border-radius: 10px;
+}
+
+nav > ul > a:active, .active {
+  background-color: rebeccapurple;
+}
+
+#menu-button {
+  display: none;
+}
+
+.logo img {
+    top: 0;
+    width: 180px;
+    height: auto;
+    position: absolute;
+    right: 0px;
+}
+
+body{
+    background-image: url('../images/ice.jpg');
+    background-color: black;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.social-icons .fa {
+    margin: 7px 23px;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    border-radius: 25%;
+    cursor: pointer;
+    font-size: 40px;
+} 
+
+footer {
+  display: flex;
+  justify-content: center;
+
+}
+
+.penguin-image{
+  height: 400px;
+  width: auto;
+  padding-top: 10px;
+}
+
+.penguinword-box {
+    color: black;
+    background-color: yellow;
+    margin: 0px;
+    margin-top: 20px;
+    padding: 20px;
+    width: 300px;
+    height: 200px;
+    border-radius: 25px;
+    box-sizing: border-box;
+    display: inline-block;  
+  }
+
+.newspengiun-words {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 768px) {
+  header {
+    background-color: black;
+    box-sizing: border-box;
+    height: 60px;
+
+    box-shadow: 0 -15px 10px 20px gray;
+
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header > h1 {
+    padding: 10px;
+    color: white;
+    right: 0;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  #menu-button {
+    display: flex;
+  }
+
+  nav {
+    position: absolute;
+    top: 100%;
+    display: none ;
+  }
+
+  nav.open {
+    display: flex;
+    right: 0;
+  }
+
+  nav > ul {
+    flex-direction: column;
+  }
+
+  nav > ul > a {
+    background-color: black;
+    border-top: 1px solid white;
+    color: white;
+  }
+
+  nav > ul > a:hover {
+      background-color: rebeccapurple;
+  }
+  nav > ul > a:active .active {
+      background-color: rebeccapurple;
+  }
+
+  main {
+    padding-top: 40px;
+  }
+
+  .logo img {
+    top: 0;
+    width: 100px;
+    height: auto;
+    position: absolute;
+    right: 50px;
+}
+
+body{
+    background-image: url('../images/ice.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.social-icons .fa {
+    margin: 7px 23px;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    border-radius: 25%;
+    cursor: pointer;
+    font-size: 40px;
+} 
+
+footer {
+  display: flex;
+  justify-content: center;
+
+}
+
+
+}
+
+  </style>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+  <header>
+    <h1>
+      If you fight fire with fire...</br>
+      you'll freeze to death
+    </h1>
+
+    <div class="logo">
+      <a href="test.html"><img src="images/white-penguin.png" ></a>
+    </div>  
+
+    <div id="menu-button">
+      <svg viewBox="0 0 100 80" width="30" height="30">
+        <rect fill="white" width="100" height="15"></rect>
+        <rect fill="white" y="30" width="100" height="15"></rect>
+        <rect fill="white" y="60" width="100" height="15"></rect>
+      </svg>
+    </div>
+
+    <nav id="navigation">
+      <ul>
+        <a href="index.html">HOME</a>
+        <a href="stories.html">STORIES</a>
+        <a href="drawings.html">DRAWINGS</a>
+        <a href="about.html">ABOUT</a>
+        <a href="social.html">SOCIAL</a>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="newspengiun-words">
+      <img src="images/penguuin-news.png" class="penguin-image">
+    <div class="penguinword-box">
+      <h2>
+        EXTRA EXTRA read all about it!
+      </h2>
+    </div>  
+      
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aspernatur tempore, obcaecati repellat recusandae nobis, itaque minima perspiciatis dignissimos voluptas quo accusantium impedit perferendis saepe consequuntur, dolor explicabo. Inventore voluptas magni, enim sed vel quo consectetur labore veniam dolores similique. Asperiores, accusantium! Quae vitae, earum atque autem excepturi minus reprehenderit.</p>
+    <p>Voluptatum doloribus consequuntur unde autem veniam nesciunt quos obcaecati quae ratione in, aut quasi possimus consectetur, ipsa minus dolor modi magnam cumque explicabo velit, placeat quo. Dolor atque modi aspernatur quaerat, velit ex accusamus a voluptatem optio, repudiandae doloribus dolorum similique sequi itaque expedita laborum beatae quasi voluptates distinctio esse?</p>
+    <p>Illo saepe, repellat distinctio nisi quae culpa quod facilis quidem quis debitis quisquam beatae nostrum quia mollitia ipsa magni nihil modi vitae accusamus. Dolore animi nisi accusantium magni! Neque itaque atque, omnis dolore nam animi, asperiores, nemo in dignissimos repellendus nulla beatae necessitatibus a quibusdam non quisquam nostrum ipsa aliquid!</p>
+    <p>Voluptatibus quibusdam debitis provident doloremque, cupiditate nostrum atque, laborum consequuntur est facere reiciendis hic aspernatur quidem laboriosam et soluta asperiores odio, tenetur blanditiis? Praesentium aliquam adipisci expedita ut? Enim ipsam quam veritatis, ut at odit commodi id repellendus culpa inventore obcaecati reprehenderit, fugit iste laboriosam quos! Quam odio in nobis?</p>
+    <p>Quisquam cum eveniet dolorem, perferendis culpa reprehenderit eligendi et nam porro veritatis neque repellendus. Iure sunt veritatis, impedit ipsa tenetur recusandae, soluta reiciendis illo harum dolor dolores sint, labore nesciunt ipsum error quisquam iste libero dolorem. Nemo nobis aliquid voluptate, recusandae error deleniti voluptas minima quibusdam accusantium? Fuga, quos dolorem!</p>
+    <p>Fugit, debitis minus. Modi ut, iusto deserunt recusandae ullam quibusdam reprehenderit fugit totam repellendus enim perferendis animi optio dolorem laborum eligendi sed, vitae praesentium consequatur pariatur tenetur laudantium? Tempore provident quod molestias quasi. Recusandae id asperiores vel voluptas, dolore, saepe perferendis fugiat harum at, tempora voluptates ad magni debitis sint!</p>
+    <p>Nam repellendus, quae amet nemo vel ab autem aliquam harum dignissimos dolorem eius pariatur perferendis ex perspiciatis! Neque, ipsam culpa! Numquam tempore illum consequuntur perferendis nihil praesentium animi officiis repellat sed doloribus temporibus similique aspernatur non corrupti magni, voluptatem vel quia eveniet veritatis, dolor pariatur ipsum odit molestias culpa? Asperiores.</p>
+    <p>Corporis dolorum, facilis optio quibusdam, quam, tempora distinctio tempore ex voluptatibus rem asperiores ratione voluptates? Possimus sit consequatur in voluptate repudiandae magnam obcaecati animi. Laborum repudiandae inventore, tenetur nam praesentium impedit earum, accusantium expedita molestiae facilis veritatis odio officia ea consequatur aliquam recusandae dolore asperiores voluptatum? Quos eius et placeat.</p>
+    <p>Perferendis, eius eum voluptatibus explicabo dicta aperiam nam possimus quae dolor aut quisquam ut beatae aspernatur eos sint. Corrupti maiores molestiae neque qui quae enim. Ea eos ab debitis aperiam quas? Nobis esse a culpa repudiandae consectetur, quae non. Fugiat ea facere impedit id incidunt enim voluptas ullam distinctio doloribus!</p>
+    <p>Accusamus vitae iusto quidem culpa unde, totam dignissimos perferendis vel! Placeat ratione laborum sunt blanditiis reprehenderit culpa, illo fugit quisquam deserunt. Recusandae, modi quia ducimus repellendus maxime pariatur deserunt neque, ipsa sequi a id. Impedit rem officiis voluptate hic veritatis, voluptatibus voluptatem incidunt eaque eius, deleniti aliquam, totam quod doloremque.</p>
+  </main>
+
+  <footer>
+    <div class="social-icons">
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-facebook"></i>
+    </div>
+  </footer>
+
+  <script>
+      const menuButton = document.getElementById('menu-button');
+      const navigation = document.getElementById('navigation');
+
+      menuButton.addEventListener('click', event => {
+        navigation.classList.toggle('open');
+        menuButton.classList.toggle('active');
+        event.stopPropagation();
+      });
+
+      document.addEventListener('click', () => {
+        navigation.classList.remove('open');
+        menuButton.classList.remove('active');
+      });
+  </script>
+</body>
+</html>

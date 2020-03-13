@@ -1,64 +1,262 @@
-* {
+
+p {
+    font-size: 18pt;
+    color: white;
+  }
+  
+  header > h1 {
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    color: white;
+  }
+  
+  nav > ul {
     margin: 0;
     padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: yellow;
+    border-radius: 10px;
+  }
+  
+  nav > ul > a {
+    color: black;
     font-family: sans-serif;
-}
-
-.menu {
-    height: 100%;
-    width: 275px;
-    position: fixed;
-    z-index: 1;
-    top: 120px;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    padding-top: 20px;
-}
-
-.menu li a {
-    display: block;
-    color: whitesmoke;
+    padding: 10px;
     text-decoration: none;
-    padding-left: 90px;
-    padding-top: 32px;
-    font-family: "Roboto", sans-serif;
-    font-size: 25px;
-}
+  }
+  
+  nav > ul > a:hover {
+    background-color: orange;
+    border-radius: 10px;
+  }
+  
+  nav > ul > a:active, .active {
+    background-color: orange;
+  }
+  
+  #menu-button {
+    display: none;
+  }
+  
+  .logo img {
+      top: 0;
+      width: 180px;
+      height: auto;
+      position: absolute;
+      right: 0px;
+  }
+  
+  body{
+      /* background-image: url('../images/ice.jpg'); */
+      background-color: black;
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+  }
+  
+  .social-icons .fa {
+      margin: 7px 23px;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      border-radius: 25%;
+      cursor: pointer;
+      font-size: 40px;
+  } 
+  
+  footer {
+    display: flex;
+    justify-content: center;
+  
+  }
+  
+  .penguin-image{
+    height: 350px;
+    width: auto;
+    padding-top: 10px;
+  }
+  
+  .penguinword-box {
+      color: black;
+      background-color: yellow;
+      margin: 0px;
+      margin-top: 10px;
+      padding: 20px;
+      width: 300px;
+      height: 200px;
+      border-radius: 25px;
+      box-sizing: border-box;
+      display: inline-block;  
+    }
 
-.menu li a:hover {
-    color: orange;
-}
+    .penguinword-box > h2 {
+        margin: 0px;
+    }
 
-.header {
-    max-width: 1200px;
-    margin: auto;
-}
-
-.logo img {
+    .box-button > h3 {
+        color: white;
+        background-color: orange;
+        text-align: center;
+        border-radius: 10px;
+        padding: 20px;
+        margin-top: 40px;
+        margin-bottom: 0px;
+        font-size: 30px;
+        
+    }
+  
+  .newspengiun-words {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  @media (max-width: 768px) {
+    header {
+      background-color: black;
+      box-sizing: border-box;
+      border-radius: 10px;
+      height: 60px;
+  
+      box-shadow: 0 -15px 10px 20px gray;
+  
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+  
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    header > h1 {
+      padding: 10px;
+      color: white;
+      right: 0;
+      font-size: 20px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+  
+    #menu-button {
+      display: flex;
+      margin-right: 10px;
+      padding: 5px; 
+      border-radius: 10px;
+    }
+  
+    nav {
+      position: absolute;
+      top: 100%;
+      display: none ;
+    }
+  
+    nav.open {
+      display: flex;
+      right: 0;
+    }
+  
+    nav > ul {
+      flex-direction: column;
+    }
+  
+    nav > ul > a {
+      background-color: black;
+      border-top: 1px solid white;
+      color: white;
+    }
+  
+    nav > ul > a:hover {
+        background-color: orange;
+    }
+    nav > ul > a:active .active {
+        background-color: orange;
+    }
+  
+    main {
+      padding-top: 40px;
+    }
+  
+    .logo img {
+      top: 0;
+      width: 100px;
+      height: auto;
+      position: absolute;
+      right: 60px;
+  }
+  
+  body{
+      /* background-image: url('../images/ice.jpg'); */
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+  }
+  
+  .social-icons .fa {
+      margin: 7px 23px;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      border-radius: 25%;
+      cursor: pointer;
+      font-size: 40px;
+  } 
+  
+  footer {
+    display: flex;
+    justify-content: center;
+  
+  }
+  
+  .penguin-image{
+    height: 200px;
+    width: auto;
+    padding-top: 30px;
+  }
+  
+  .penguinword-box {
+      color: black;
+      background-color: yellow;
+      margin: 0px;
+      margin-top: 40px;
+      padding: 20px;
+      width: 240px;
+      height: 100px;
+      border-radius: 25px;
+      box-sizing: border-box;
+      display: inline-block;  
+      text-align: center
+    }
+  
+.penguinword-box > h2 {
+    margin: 0px;
+    font-size: 20px;
     width: 200px;
-    height: auto;
-    float: left;
 }
 
-body {
-    background-image: url('../images/evee.jpg');
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-
-}
-
-.header {
-    max-width: 1200px;
-    margin: auto;
-}
-
-h1 {
-    float: right;
-    padding-top: 25px;
-    padding-right: 100px;
+.box-button > h3 {
     color: white;
-    
+    background-color: orange;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    font-size: 20px;
+    margin-top: 25px;
 }
+
+
+  .newspengiun-words {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  
+  }
+  
