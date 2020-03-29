@@ -1,0 +1,41 @@
+  #root {
+    margin: auto;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;    
+  }
+
+
+  #root > a > img {
+    width: 400px;
+    height: 400px;
+    margin-top: 20px;
+  }
+
+  #root > img:hover{
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) { 
+  #root {
+    margin: auto;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;    
+   }
+
+
+  #root > a > img {
+    width: 400px;
+    height: 400px;
+    margin-top: 40px;
+  }
+
+  #root > img:hover{
+    cursor: pointer;
+  }
+
+}
+  

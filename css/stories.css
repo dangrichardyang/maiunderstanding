@@ -1,0 +1,39 @@
+main > p {
+    font-size: 18pt;
+    color: white;
+  }
+
+
+main > h1 {
+    margin-top: 20px;
+    font-size: 25pt;
+    color: white;
+    text-decoration: white underline;
+}
+
+main > h2 {
+    font-size: 12pt;
+    color: yellow;
+}
+  
+
+  @media (max-width: 768px) {
+    main > p {
+      font-size: 12pt;
+      color: white;
+    }
+
+    main > h1 {
+        margin-top: 40px;
+        font-size: 18pt;
+        color: white;
+        text-decoration: white underline;
+    }
+
+    main > h2 {
+        font-size: 8pt;
+        color: yellow;
+    }
+
+  }
+

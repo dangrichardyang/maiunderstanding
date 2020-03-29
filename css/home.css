@@ -1,0 +1,102 @@
+  main > p {
+    font-size: 18pt;
+    color: white;
+  }
+  
+  .penguin-image{
+    height: 350px;
+    width: auto;
+    padding-top: 10px;
+  }
+  
+  .penguinword-box {
+    color: black;
+    background-color: yellow;
+    margin: 0px;
+    margin-top: 10px;
+    padding: 20px;
+    width: 300px;
+    height: 200px;
+    border-radius: 25px;
+    box-sizing: border-box;
+    display: inline-block;  
+  }
+
+  .penguinword-box > h2 {
+      margin: 0px;
+  }
+
+  .box-button > h3 {
+      color: white;
+      background-color: orange;
+      text-align: center;
+      border-radius: 25px;
+      padding: 20px;
+      margin-top: 40px;
+      margin-bottom: 0px;
+      font-size: 30px;
+        
+  }
+  
+  .newspengiun-words {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .box-button > h3:hover {
+    background-color: white;
+    color: orange;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+  main > p {
+    font-size: 12pt;
+    color: white;
+  }
+    
+  .penguin-image{
+    height: 200px;
+    width: auto;
+    padding-top: 30px;
+  }
+  
+  .penguinword-box {
+      color: black;
+      background-color: yellow;
+      margin: 0px;
+      margin-top: 30px;
+      padding: 20px;
+      width: 240px;
+      height: 100px;
+      border-radius: 25px;
+      box-sizing: border-box;
+      display: inline-block;  
+      text-align: center
+    }
+  
+  .penguinword-box > h2 {
+    margin: 0px;
+    font-size: 20px;
+    width: 200px;
+  }
+
+  .box-button > h3 {
+    color: white;
+    background-color: orange;
+    text-align: center;
+    border-radius: 25px;
+    padding: 20px;
+    width: 200px;
+    font-size: 20px;
+    margin-top: 15px;
+  }
+
+
+  .newspengiun-words {
+    display: flex;
+    justify-content: space-around;
+  }
+ 
+}
+  
