@@ -9,7 +9,7 @@
     padding-top: 10px;
   }
   main > div > img:hover {
-    animation: shake 2s;
+    animation: shake 1s;
     animation-iteration-count: infinite;
   }
   
