@@ -11,10 +11,17 @@
         justify-content: center;
         flex-direction: column;
         margin: 10px;
-        background-color: orange;
+        background-color: none;
+        border: solid white 10px;
         width: 300px;
         border-radius: 25px;
         padding: 10px;
+        transition: transform .2s;
+    }
+
+    main > div > section:hover {
+      transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+      background-color: orange;
     }
 
     main > div > section > a {
@@ -62,6 +69,10 @@
                 width: 400px;
                 border-radius: 25px;
                 padding: 10px;
+            }
+
+            main > div > section:hover {
+              transform: none; /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
             }
             
             main > div > section > a {

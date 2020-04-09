@@ -1,5 +1,6 @@
       const menuButton = document.getElementById('menu-button');
       const navigation = document.getElementById('navigation');
+      //const newStoyButton = document.getElementById('new-story-button');
 
       menuButton.addEventListener('click', event => {
         navigation.classList.toggle('open');
@@ -11,3 +12,7 @@
         navigation.classList.remove('open');
         menuButton.classList.remove('active');
       });
+
+     /* newStoyButton.addEventListener('click', event => {
+        window.open("../project-1/stories/its-about-time.html");
+      });*/
