@@ -17,7 +17,7 @@ header > h1 {
     border-radius: 10px;
   }
   
-  nav > ul > a {
+  nav > ul > li > a {
     color: black;
     font-family: sans-serif;
     padding: 10px;
@@ -30,12 +30,12 @@ header > h1 {
     font-family: sans-serif;
   } */
 
-  nav > ul > a:hover {
+  nav > ul > li > a:hover {
     background-color: orange;
     border-radius: 10px;
   }
   
-  nav > ul > a:active, .active {
+  nav > ul > li > a:active, .active {
     background-color: orange;
   }
   
