@@ -132,15 +132,17 @@ header > h1 {
       background-color: black;
     }
   
+    nav > ul > li {
+      background-color: black;
+      border-top: 1px solid white;
+    }
+
     nav > ul > li > a {
       color: white;
       text-decoration: none;
     }
   
-    nav > ul > li {
-      background-color: black;
-      border-top: 1px solid white;
-    }
+
   
     nav > ul > li > a:hover {
         background-color: orange;
