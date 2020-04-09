@@ -17,7 +17,7 @@ header > h1 {
     border-radius: 10px;
   }
   
-  nav > ul > li {
+  nav > ul > a {
     color: black;
     font-family: sans-serif;
     padding: 10px;
@@ -30,12 +30,12 @@ header > h1 {
     font-family: sans-serif;
   } */
 
-  nav > ul > li:hover {
+  nav > ul > a:hover {
     background-color: orange;
     border-radius: 10px;
   }
   
-  nav > ul > li > a:active, .active {
+  nav > ul > a:active, .active {
     background-color: orange;
   }
   
@@ -132,20 +132,20 @@ header > h1 {
       background-color: black;
     }
   
-    nav > ul > li {
+    nav > ul > a {
       background-color: black;
       border-top: 1px solid white;
     }
 
-    nav > ul > li {
+    nav > ul > a {
       color: white;
       text-decoration: none;
     }
   
-    nav > ul > li:hover {
+    nav > ul > a:hover {
         background-color: orange;
     }
-    nav > ul > li:active .active {
+    nav > ul > a:active .active {
         background-color: orange;
     }
   
