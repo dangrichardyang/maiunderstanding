@@ -137,20 +137,31 @@ header > h1 {
       border-top: 1px solid white;
     }
 
-    nav > ul > li > a {
+    nav > ul > li {
       color: white;
       text-decoration: none;
     }
   
+    nav > ul > li:hover {
+        background-color: orange;
+    }
+    nav > ul > li:active .active {
+        background-color: orange;
+    }
+  
 
+    /* nav > ul > li > a {
+      color: white;
+      text-decoration: none;
+    }
   
     nav > ul > li > a:hover {
         background-color: orange;
     }
     nav > ul > li > a:active .active {
         background-color: orange;
-    }
-  
+    } */
+
     main {
       padding-top: 40px;
     }
