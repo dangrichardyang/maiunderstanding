@@ -30,7 +30,7 @@ header > h1 {
     font-family: sans-serif;
   }
 
-  nav > ul > li:hover {
+  nav > ul > li > a:hover {
     background-color: orange;
     border-radius: 10px;
   }
