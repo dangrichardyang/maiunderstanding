@@ -5,6 +5,16 @@ header > h1 {
     margin: 0;
     color: white;
   }
+
+  .nav .current {
+    background-color: orange;
+    border-radius: 10px;
+  }
+
+  .nav .current > a{
+    color: white;
+    font-weight: bold;
+  }
   
   nav > ul {
     margin: 0;
@@ -24,18 +34,18 @@ header > h1 {
     text-decoration: none;
   }
   
-  /* nav > ul > li > a{
+  nav > ul > li > a{
     text-decoration: none;
     color: black;
     font-family: sans-serif;
-  } */
+  }
 
   nav > ul > li:hover {
     background-color: orange;
     border-radius: 10px;
   }
   
-  nav > ul > li:active, .active {
+  nav > ul > li > a:active, .active {
     background-color: orange;
   }
 
@@ -137,9 +147,8 @@ header > h1 {
       border-top: 1px solid white;
     }
 
-    nav > ul > li {
+    nav > ul > li > a {
       color: white;
-      text-decoration: none;
     }
   
     /* nav > ul > a:hover {
