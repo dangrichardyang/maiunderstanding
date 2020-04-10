@@ -2,46 +2,47 @@
 
 <html lang="en">
 
-    <head>
-      <title>
-        Mai Understanding Home Page
-      </title>
-      <link rel="stylesheet" href="css/style.css">
-      <link rel="stylesheet" href="css/drawings.css">  
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      <script defer src="js/menu-button.js"></script>    
-    </head>
+  <head>
+    <title>
+      Mai Understanding Home Page
+    </title>
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/drawings.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script defer src="js/drawings-modal.js"></script>
+    <meta charset="UTF-8">
+  </head>
 
-    <body>
-      <header>
-        <h1>
-          If you fight fire with fire...</br>
-          you'll freeze to death
-        </h1>
-    
-        <div class="logo">
-          <a href="index.html"><img src="images/white-penguin.png" ></a>
-        </div>  
-    
-        <div id="menu-button">
-          <svg viewBox="0 0 100 80" width="30" height="30">
-            <rect fill="white" width="100" height="15"></rect>
-            <rect fill="white" y="30" width="100" height="15"></rect>
-            <rect fill="white" y="60" width="100" height="15"></rect>
-          </svg>
-        </div>
-    
-        <nav id="navigation">
-          <ul class = "nav">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="stories.html">STORIES</a></li>
-            <li class = "current"><a href="drawings.html">DRAWINGS</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="social.html">SOCIAL</a></li>
-          </ul>
-        </nav>
-      </header>
+  <body>
+    <header>
+      <h1>
+        If you fight fire with fire...<br>
+        you'll freeze to death
+      </h1>
+  
+      <div class="logo">
+        <a href="index.html"><img src="images/white-penguin.png" alt="Logo"></a>
+      </div>  
+  
+      <div id="menu-button">
+        <svg viewBox="0 0 100 80" width="30" height="30">
+          <rect fill="white" width="100" height="15"></rect>
+          <rect fill="white" y="30" width="100" height="15"></rect>
+          <rect fill="white" y="60" width="100" height="15"></rect>
+        </svg>
+      </div>
+  
+      <nav id="navigation">
+        <ul class = "nav">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="stories.html">STORIES</a></li>
+          <li class = "current"><a href="drawings.html">DRAWINGS</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="social.html">SOCIAL</a></li>
+        </ul>
+      </nav>
+    </header>
     
       <main>
         <div id="root">
@@ -57,7 +58,7 @@
 
           <div id="drawing-modal" class="modal">
             <span class="close">&times;</span>
-            <img class="modal-content" id="images">
+            <img class="modal-content" id="images" alt="modal-stuff" src="#">
           </div>
 
         </div>
@@ -70,33 +71,5 @@
           <a href="https://www.instagram.com/maiunderstanding/" target="_blank"><i class="fa fa-instagram"></i></a>
         </div>
       </footer>
-
-      <script>
-// create references to the modal...
-var drawing_modal = document.getElementById('drawing-modal');
-// to all images -- note I'm using a class!
-var drawings = document.getElementsByClassName('drawings');
-// the image in the modal
-var images = document.getElementById("images");
-// and the caption in the modal
-var captionText = document.getElementById("caption");
-
-// Go through all of the images with our custom class
-for (var i = 0; i < drawings.length; i++) {
-  var img = drawings[i];
-  // and attach our click listener for this image.
-  img.onclick = function(evt) {
-    drawing_modal.style.display = "block";
-    images.src = this.src;
-    captionText.innerHTML = this.alt;
-  }
-}
-
-var span = document.getElementsByClassName("close")[0];
-
-span.onclick = function() {
-  drawing_modal.style.display = "none";
-}
-      </script>
     </body>
 </html>
