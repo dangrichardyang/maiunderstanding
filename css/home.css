@@ -8,7 +8,7 @@
     width: auto;
     padding-top: 10px;
   }
-  main > div > img:hover {
+  main > div > a > img {
     animation: shake 1s;
     animation-iteration-count: infinite;
   }
