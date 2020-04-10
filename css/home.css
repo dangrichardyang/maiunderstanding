@@ -124,12 +124,6 @@ main > div > a > img {
 }
 
 @media (max-width: 400px) {
-
-  .penguin-image{
-    height: 200px;
-    width: auto;
-    padding-top: 30px;
-  }
   
   .penguinword-box {
     color: black;
@@ -148,7 +142,7 @@ main > div > a > img {
   .penguinword-box > h2 {
     margin: 0px;
     font-size: 15px;
-    width: 1600px;
+    width: 160px;
   }
 
   .box-button > h3 {
