@@ -5,6 +5,7 @@ main {
 main > p {
   font-size: 20pt;
   color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 main > img {
@@ -20,7 +21,6 @@ main > img {
     
   main > p {
     font-size: 12pt;
-    color: white;
   }
 
   main > img {

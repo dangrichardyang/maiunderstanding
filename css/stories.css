@@ -1,6 +1,7 @@
 main > p {
     font-size: 18pt;
     color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
 
 
@@ -9,11 +10,13 @@ main > h1 {
     font-size: 25pt;
     color: white;
     text-decoration: white underline;
+    font-family: "Courier New", Courier, monospace;
 }
 
 main > h2 {
     font-size: 12pt;
     color: yellow;
+    font-family: "Courier New", Courier, monospace;
 }
   
 

@@ -32,6 +32,7 @@ main > div > section > a > h2 {
   color: white;
   text-align: center;
   vertical-align: center;
+  font-family: "Courier New", Courier, monospace;
 }
 main > div > section > a > img {
   width: 100%;
@@ -46,6 +47,7 @@ main > div > section > a > p {
     margin: 30px;
     color: white;
     text-align: left;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }    
 
 @media (max-width: 768px) { 
