@@ -85,18 +85,18 @@ main > div > a > img {
   }
   
   .penguinword-box {
-      color: black;
-      background-color: yellow;
-      margin: 0px;
-      margin-top: 30px;
-      padding: 20px;
-      width: 200px;
-      height: auto;
-      border-radius: 25px;
-      box-sizing: border-box;
-      display: inline-block;  
-      text-align: left;
-    }
+    color: black;
+    background-color: yellow;
+    margin: 0px;
+    margin-top: 30px;
+    padding: 20px;
+    width: 200px;
+    height: auto;
+    border-radius: 25px;
+    box-sizing: border-box;
+    display: inline-block;  
+    text-align: left;
+  }
   
   .penguinword-box > h2 {
     margin: 0px;
@@ -121,4 +121,44 @@ main > div > a > img {
     justify-content: space-around;
   }
 
+}
+
+@media (max-width: 400px) {
+
+  .penguin-image{
+    height: 200px;
+    width: auto;
+    padding-top: 30px;
+  }
+  
+  .penguinword-box {
+    color: black;
+    background-color: yellow;
+    margin: 0px;
+    margin-top: 30px;
+    padding: 20px;
+    width: 160px;
+    height: auto;
+    border-radius: 25px;
+    box-sizing: border-box;
+    display: inline-block;  
+    text-align: left;
+  }
+  
+  .penguinword-box > h2 {
+    margin: 0px;
+    font-size: 15px;
+    width: 1600px;
+  }
+
+  .box-button > h3 {
+    color: white;
+    background-color: orange;
+    text-align: center;
+    border-radius: 25px;
+    padding: 10px;
+    width: 140px;
+    font-size: 15px;
+    margin-top: 15px;
+  }
 }
