@@ -46,16 +46,20 @@
       <main>
         <div id="root">
 
-          <a class="image-link" href="images/1.png" ><img src="images/1.png"/></a>
-          <a href="images/2.png" ><img src="images/2.png"/></a>
-          <a href="images/3.png" ><img src="images/3.png"/></a>
-          <a href="images/4.png" ><img src="images/4.png"/></a>
-          <a href="images/5.png" ><img src="images/5.png"/></a>
-          <a href="images/6.png" ><img src="images/6.png"/></a>
-          <a href="images/7.png" ><img src="images/7.png"/></a>
-          <a href="images/8.png" ><img src="images/8.png"/></a>
-          
-          
+          <img class="drawings" src="images/1.png" alt="Image-1">
+          <img class="drawings" src="images/2.png" alt="Image-2">
+          <img class="drawings" src="images/3.png" alt="Image-3">
+          <img class="drawings" src="images/4.png" alt="Image-4">
+          <img class="drawings" src="images/5.png" alt="Image-5">
+          <img class="drawings" src="images/6.png" alt="Image-6">
+          <img class="drawings" src="images/7.png" alt="Image-7">
+          <img class="drawings" src="images/8.png" alt="Image-8">
+
+          <div id="drawing-modal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="images">
+          </div>
+
         </div>
       </main>
     
@@ -68,10 +72,31 @@
       </footer>
 
       <script>
-        
-  $(document).ready(function() {
-  $('.image-link').magnificPopup({type:'image'});
-});
+// create references to the modal...
+var drawing_modal = document.getElementById('drawing-modal');
+// to all images -- note I'm using a class!
+var drawings = document.getElementsByClassName('drawings');
+// the image in the modal
+var images = document.getElementById("images");
+// and the caption in the modal
+var captionText = document.getElementById("caption");
+
+// Go through all of the images with our custom class
+for (var i = 0; i < drawings.length; i++) {
+  var img = drawings[i];
+  // and attach our click listener for this image.
+  img.onclick = function(evt) {
+    drawing_modal.style.display = "block";
+    images.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+  drawing_modal.style.display = "none";
+}
       </script>
     </body>
 </html>
