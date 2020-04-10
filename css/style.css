@@ -1,211 +1,194 @@
 
 header > h1 {
+  font-size: 40px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 0;
+  color: white;
+}
+
+.nav .current {
+  background-color: orange;
+  border-radius: 10px;
+}
+
+.nav .current > a{
+  color: white;
+  font-weight: bold;
+}
+
+nav > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: yellow;
+  border-radius: 10px;
+}
+
+nav > ul > li {
+  color: black;
+  font-family: sans-serif;
+  padding: 10px;
+  text-decoration: none;
+}
+
+nav > ul > li > a{
+  text-decoration: none;
+  color: black;
+  font-family: sans-serif;
+}
+
+nav > ul > li:hover {
+  background-color: orange;
+  border-radius: 10px;
+}
+
+nav > ul > li > a:active, .active {
+  background-color: orange;
+}
+
+#menu-button {
+  display: none;
+}
+
+.logo img {
+    top: 0;
+    width: 180px;
+    height: auto;
+    position: absolute;
+    right: 0px;
+}
+
+body{
+    /* background-image: url('../images/ice.jpg'); */
+    background-color: black;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.social-icons .fa {
+    margin: 7px 23px;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    border-radius: 25%;
+    cursor: pointer;
     font-size: 40px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 0;
-    color: white;
-  }
+} 
 
-  .nav .current {
-    background-color: orange;
+footer {
+  display: flex;
+  justify-content: center;
+
+}
+
+@media (max-width: 768px) {
+  header {
+    background-color: black;
+    box-sizing: border-box;
     border-radius: 10px;
-  }
+    height: 60px;
 
-  .nav .current > a{
-    color: white;
-    font-weight: bold;
-  }
-  
-  nav > ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    box-shadow: 0 -15px 10px 20px gray;
+
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    background-color: yellow;
-    border-radius: 10px;
-  }
-  
-  nav > ul > li {
-    color: black;
-    font-family: sans-serif;
-    padding: 10px;
-    text-decoration: none;
-  }
-  
-  nav > ul > li > a{
-    text-decoration: none;
-    color: black;
-    font-family: sans-serif;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  nav > ul > li:hover {
-    background-color: orange;
-    border-radius: 10px;
+  main > p {
+    font-size: 12pt;
+    color: white;
   }
-  
-  nav > ul > li > a:active, .active {
-    background-color: orange;
+
+  header > h1 {
+    padding: 10px;
+    color: white;
+    right: 0;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
 
   #menu-button {
-    display: none;
+    display: flex;
+    margin-right: 10px;
+    padding: 5px; 
+    border-radius: 10px;
   }
-  
+
+  #menu-button:hover {
+    cursor: pointer;
+  }
+
+  nav {
+    position: absolute;
+    top: 100%;
+    display: none ;
+  }
+
+  nav.open {
+    display: flex;
+    right: 0;
+  }
+
+  nav > ul {
+    flex-direction: column;
+    background-color: black;
+  }
+
+  nav > ul > li {
+    background-color: black;
+    border-top: 1px solid white;
+  }
+
+  nav > ul > li > a {
+    color: white;
+  }
+
+
+  main {
+    padding-top: 40px;
+  }
+
   .logo img {
-      top: 0;
-      width: 180px;
-      height: auto;
-      position: absolute;
-      right: 0px;
-  }
-  
-  body{
-      /* background-image: url('../images/ice.jpg'); */
-      background-color: black;
-      height: 100vh;
-      background-size: cover;
-      background-position: center;
-      height: 100vh;
-  }
-  
-  .social-icons .fa {
-      margin: 7px 23px;
-      display: inline-block;
-      padding: 8px;
-      color: white;
-      border-radius: 25%;
-      cursor: pointer;
-      font-size: 40px;
-  } 
-  
-  footer {
-    display: flex;
-    justify-content: center;
-  
-  }
+    top: 0;
+    width: 100px;
+    height: auto;
+    position: absolute;
+    right: 60px;
+}
 
-  @media (max-width: 768px) {
-    header {
-      background-color: black;
-      box-sizing: border-box;
-      border-radius: 10px;
-      height: 60px;
-  
-      box-shadow: 0 -15px 10px 20px gray;
-  
-      position: fixed;
-      left: 0;
-      right: 0;
-      top: 0;
-  
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-    }
+body{
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
 
-    main > p {
-      font-size: 12pt;
-      color: white;
-    }
-  
-    header > h1 {
-      padding: 10px;
-      color: white;
-      right: 0;
-      font-size: 20px;
-      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
-  
-    #menu-button {
-      display: flex;
-      margin-right: 10px;
-      padding: 5px; 
-      border-radius: 10px;
-    }
-  
-    nav {
-      position: absolute;
-      top: 100%;
-      display: none ;
-    }
-  
-    nav.open {
-      display: flex;
-      right: 0;
-    }
-  
-    nav > ul {
-      flex-direction: column;
-      background-color: black;
-    }
-  
-    nav > ul > li {
-      background-color: black;
-      border-top: 1px solid white;
-    }
+.social-icons .fa {
+    margin: 7px 23px;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    border-radius: 25%;
+    cursor: pointer;
+    font-size: 40px;
+} 
 
-    nav > ul > li > a {
-      color: white;
-    }
-  
-    /* nav > ul > a:hover {
-        background-color: orange;
-    }
-    nav > ul > a:active .active {
-        background-color: orange;
-    } */
-  
-
-    /* nav > ul > li > a {
-      color: white;
-      text-decoration: none;
-    }
-  
-    nav > ul > li > a:hover {
-        background-color: orange;
-    }
-    nav > ul > li > a:active .active {
-        background-color: orange;
-    } */
-
-    main {
-      padding-top: 40px;
-    }
-  
-    .logo img {
-      top: 0;
-      width: 100px;
-      height: auto;
-      position: absolute;
-      right: 60px;
-  }
-  
-  body{
-      /* background-image: url('../images/ice.jpg'); */
-      height: 100vh;
-      background-size: cover;
-      background-position: center;
-      height: 100vh;
-  }
-  
-  .social-icons .fa {
-      margin: 7px 23px;
-      display: inline-block;
-      padding: 8px;
-      color: white;
-      border-radius: 25%;
-      cursor: pointer;
-      font-size: 40px;
-  } 
-  
-  footer {
-    display: flex;
-    justify-content: center;
-  
-  }
+footer {
+  display: flex;
+  justify-content: center;
 
 }
-  
+
+}
