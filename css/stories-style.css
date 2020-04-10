@@ -28,7 +28,7 @@ main > div > section > a {
   text-decoration: none;
 }
 
-main > div > section > a > h1 {
+main > div > section > a > h2 {
   margin: 0;
   color: white;
   text-align: center;
