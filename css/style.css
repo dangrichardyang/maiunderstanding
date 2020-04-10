@@ -62,7 +62,6 @@ nav > ul > li > a:active, .active {
 }
 
 body{
-    /* background-image: url('../images/ice.jpg'); */
     background-color: black;
     height: 100vh;
     background-size: cover;
@@ -70,20 +69,34 @@ body{
     height: 100vh;
 }
 
-.social-icons .fa {
-    margin: 7px 23px;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    border-radius: 25%;
-    cursor: pointer;
-    font-size: 40px;
-} 
+footer > div > a > img {
+  width: 80px;
+  margin: 10px;
+}
+
+footer .facebook-black {
+  background: white;
+  border-radius: 25%;
+  border: white solid 5px;
+}
+
+footer .twitter-black {
+  background: white;
+  border-radius: 25%;
+  border: white solid 5px;
+}
+
+footer .instagram-black {
+  background: white;
+  border-radius: 25%;
+  border: white solid 5px;
+}
 
 footer {
   display: flex;
   justify-content: center;
-
+  margin-top: 20px;
+  width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -165,29 +178,27 @@ footer {
     height: auto;
     position: absolute;
     right: 60px;
+  }
+
+  footer > div > a > img {
+    width: 40px;
+    margin: 5px;
+  }
+
+  footer .facebook-black {
+    border: white solid 2px;
+  }
+  
+  footer .twitter-black {
+    border: white solid 2px;
+  }
+  
+  footer .instagram-black {
+    border: white solid 2px;
+  }
+
+  footer {
+    margin-top: 40px;
+  }
 }
 
-body{
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-}
-
-.social-icons .fa {
-    margin: 7px 23px;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    border-radius: 25%;
-    cursor: pointer;
-    font-size: 40px;
-} 
-
-footer {
-  display: flex;
-  justify-content: center;
-
-}
-
-}
