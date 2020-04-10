@@ -86,7 +86,7 @@ main > div > a > img {
       margin: 0px;
       margin-top: 30px;
       padding: 20px;
-      width: 240px;
+      width: 200px;
       height: auto;
       border-radius: 25px;
       box-sizing: border-box;
@@ -106,7 +106,7 @@ main > div > a > img {
     text-align: center;
     border-radius: 25px;
     padding: 20px;
-    width: 200px;
+    width: 160px;
     font-size: 20px;
     margin-top: 15px;
   }
