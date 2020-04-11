@@ -124,6 +124,12 @@ main > div > a > img {
 }
 
 @media (max-width: 400px) {
+
+  .penguin-image{
+    height: 160px;
+    width: auto;
+    padding-top: 30px;
+  }
   
   .penguinword-box {
     color: black;
