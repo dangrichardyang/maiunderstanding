@@ -62,7 +62,6 @@ main > div > section > a > p {
       flex-direction: column;
       align-items: center;
       margin: 10px;
-      background-color: orange;
       width: 400px;
       border-radius: 25px;
       padding: 10px;
@@ -70,6 +69,5 @@ main > div > section > a > p {
 
   main > div > section:hover {
     transform: none; 
-    background-color: black;
   }
 }
