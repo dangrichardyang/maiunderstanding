@@ -70,5 +70,6 @@ main > div > section > a > p {
 
   main > div > section:hover {
     transform: none; 
+    background-color: black;
   }
 }
