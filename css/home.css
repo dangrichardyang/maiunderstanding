@@ -12,6 +12,8 @@ main > p {
 main > div > a > img {
   animation: shake 1s;
   animation-iteration-count: infinite;
+  position: relative;
+  z-index: -1;
 }
 
 @keyframes shake {
